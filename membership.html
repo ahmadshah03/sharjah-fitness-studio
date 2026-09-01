@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sharjah Fitness Studio membership plans. Choose from Basic, Standard, or Premium plans with flexible pricing.">
+    <title>Membership | Sharjah Fitness Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">SFS <span>Studio</span></a>
+            <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+
+        <header class="page-header">
+            <h1>Membership <span>Plans</span></h1>
+            <p>Flexible options to suit every lifestyle and budget</p>
+        </header>
+
+        <!-- Pricing Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Choose Your <span>Plan</span></h2>
+                    <p>All plans include access to gym equipment and changing facilities</p>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <!-- Basic Plan -->
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">AED 150 <span>/ month</span></div>
+                        <ul class="pricing-features">
+                            <li>Gym floor access</li>
+                            <li>Changing facilities</li>
+                            <li>2 group classes per week</li>
+                            <li>Locker access</li>
+                            <li>Free fitness assessment</li>
+                        </ul>
+                        <a href="#enquiry" class="btn btn-primary" style="width:100%;">Get Started</a>
+                    </div>
+
+                    <!-- Standard Plan (Featured) -->
+                    <div class="pricing-card featured">
+                        <span class="pricing-badge">Most Popular</span>
+                        <h3 style="color:#fff;">Standard</h3>
+                        <div class="price">AED 250 <span>/ month</span></div>
+                        <ul class="pricing-features">
+                            <li>Everything in Basic</li>
+                            <li>Unlimited group classes</li>
+                            <li>1 PT session per month</li>
+                            <li>Nutrition guidance</li>
+                            <li>Progress tracking</li>
+                            <li>Guest pass (1/month)</li>
+                        </ul>
+                        <a href="#enquiry" class="btn btn-primary" style="width:100%;">Get Started</a>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <div class="price">AED 400 <span>/ month</span></div>
+                        <ul class="pricing-features">
+                            <li>Everything in Standard</li>
+                            <li>4 PT sessions per month</li>
+                            <li>Personalised meal plan</li>
+                            <li>Priority class booking</li>
+                            <li>Unlimited guest passes</li>
+                            <li>Body composition analysis</li>
+                        </ul>
+                        <a href="#enquiry" class="btn btn-primary" style="width:100%;">Get Started</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="section section-alt" id="enquiry" aria-labelledby="enquiry-heading">
+            <div class="container" style="max-width:700px;">
+                <div class="section-header">
+                    <h2 id="enquiry-heading">Membership <span>Enquiry</span></h2>
+                    <p>Fill in the form below and we will be in touch within 24 hours</p>
+                </div>
+
+                <form id="memberForm" novalidate aria-label="Membership enquiry form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mName">Full Name <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                            <input type="text" id="mName" name="mName" autocomplete="name" required aria-required="true" placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mEmail">Email Address <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                            <input type="email" id="mEmail" name="mEmail" autocomplete="email" required aria-required="true" placeholder="you@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mPhone">Phone Number</label>
+                            <input type="tel" id="mPhone" name="mPhone" autocomplete="tel" placeholder="+971 6 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="mPlan">Preferred Plan <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                            <select id="mPlan" name="mPlan" required aria-required="true">
+                                <option value="">Select a plan...</option>
+                                <option value="basic">Basic – AED 150/month</option>
+                                <option value="standard">Standard – AED 250/month</option>
+                                <option value="premium">Premium – AED 400/month</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mGoals">Fitness Goals (optional)</label>
+                        <textarea id="mGoals" name="mGoals" placeholder="Tell us about your fitness goals..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Submit Enquiry</button>
+                    <div id="memberFormSuccess" class="form-success" role="alert" tabindex="-1">
+                        ✅ Thank you! We have received your enquiry and will contact you within 24 hours.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sharjah Fitness Studio</h4>
+                <p>Your local gym in Sharjah, dedicated to helping you achieve your fitness goals.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="classes.html">Classes</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>123 Al Taawun Street, Sharjah, UAE</p>
+                <p>+971 6 000 0000</p>
+                <p>info@sharjahfitness.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon – Fri: 6:00 AM – 10:00 PM</p>
+                <p>Saturday: 7:00 AM – 9:00 PM</p>
+                <p>Sunday: 8:00 AM – 8:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sharjah Fitness Studio. CS404 Assignment | UC0132</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
